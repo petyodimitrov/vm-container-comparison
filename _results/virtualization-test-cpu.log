@@ -1,0 +1,1109 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/trusty64'...
+
+[KProgress: 90%
+[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/trusty64' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20151119.0.0'. The latest is version '20151130.0.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Setting the name of the VM: vm-cpu
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.3.34
+    default: VirtualBox Version: 5.0
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => D:/prj/vm-vs-container/vb-docker-comparison/vm-cpu
+==> default: Running provisioner: shell...
+    default: Running: C:/Users/Petyo/AppData/Local/Temp/vagrant-shell20151202-2256-1fix0wi.sh
+==> default: stdin: is not a tty
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: wget is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+==> default: classic_benchmarks/
+==> default: classic_benchmarks/source_code/
+==> default: classic_benchmarks/source_code/common_64bit/
+==> default: classic_benchmarks/source_code/common_64bit/cpuidh.h
+==> default: classic_benchmarks/source_code/common_64bit/cpuida64.asm
+==> default: classic_benchmarks/source_code/common_64bit/test
+==> default: classic_benchmarks/source_code/common_64bit/README
+==> default: classic_benchmarks/source_code/common_64bit/cpuida64.o
+==> default: classic_benchmarks/source_code/common_64bit/cpuidc64.o
+==> default: classic_benchmarks/source_code/common_64bit/test.c
+==> default: classic_benchmarks/source_code/common_64bit/cpuidc64.c
+==> default: classic_benchmarks/source_code/common_32bit/
+==> default: classic_benchmarks/source_code/common_32bit/cpuidh.h
+==> default: classic_benchmarks/source_code/common_32bit/test
+==> default: classic_benchmarks/source_code/common_32bit/README
+==> default: classic_benchmarks/source_code/common_32bit/cpuida.asm
+==> default: classic_benchmarks/source_code/common_32bit/test.c
+==> default: classic_benchmarks/source_code/common_32bit/cpuidc.c
+==> default: classic_benchmarks/source_code/common_32bit/cpuidc.o
+==> default: classic_benchmarks/source_code/common_32bit/cpuida.o
+==> default: classic_benchmarks/source_code/linpack/
+==> default: classic_benchmarks/source_code/linpack/linpack.c
+==> default: classic_benchmarks/source_code/linpack/README
+==> default: classic_benchmarks/source_code/dhrystone2/
+==> default: classic_benchmarks/source_code/dhrystone2/README
+==> default: classic_benchmarks/source_code/dhrystone2/dhry_2.c
+==> default: classic_benchmarks/source_code/dhrystone2/dhry_1.c
+==> default: classic_benchmarks/source_code/dhrystone2/dhry.h
+==> default: classic_benchmarks/source_code/livermore_loops/
+==> default: classic_benchmarks/source_code/livermore_loops/README
+==> default: classic_benchmarks/source_code/livermore_loops/lloops.c
+==> default: classic_benchmarks/source_code/whetstone/
+==> default: classic_benchmarks/source_code/whetstone/README
+==> default: classic_benchmarks/source_code/whetstone/whets.c
+==> default: classic_benchmarks/source_code/dhrystone1/
+==> default: classic_benchmarks/source_code/dhrystone1/dhry1.c
+==> default: classic_benchmarks/source_code/dhrystone1/README
+==> default: classic_benchmarks/bin32/
+==> default: classic_benchmarks/bin32/linpack_NoOpt
+==> default: classic_benchmarks/bin32/lloops_NoOpt
+==> default: classic_benchmarks/bin32/dhrystone1_NoOpt
+==> default: classic_benchmarks/bin32/whetstone_NoOpt
+==> default: classic_benchmarks/bin32/dhrystone2_NoOpt
+==> default: classic_benchmarks/bin32/linpack
+==> default: classic_benchmarks/bin32/dhrystone2
+==> default: classic_benchmarks/bin32/lloops
+==> default: classic_benchmarks/bin32/runall
+==> default: classic_benchmarks/bin32/whetstone
+==> default: classic_benchmarks/bin32/dhrystone1
+==> default: classic_benchmarks/README
+==> default: classic_benchmarks/bin64/
+==> default: classic_benchmarks/bin64/lloops_64
+==> default: classic_benchmarks/bin64/dhrystone2_64_NoOpt
+==> default: classic_benchmarks/bin64/lloops_64_NoOpt
+==> default: classic_benchmarks/bin64/linpack_64_NoOpt
+==> default: classic_benchmarks/bin64/whetstone_64_NoOpt
+==> default: classic_benchmarks/bin64/linpack_64
+==> default: classic_benchmarks/bin64/dhrystone1_64
+==> default: classic_benchmarks/bin64/runall
+==> default: classic_benchmarks/bin64/whetstone_64
+==> default: classic_benchmarks/bin64/dhrystone2_64
+==> default: classic_benchmarks/bin64/dhrystone1_64_NoOpt
+clean previous results
+running tests...
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2671 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+
+Dhrystone Benchmark, Version 1.1 (Language: C or C++)
+
+Optimisation    No Opt 64 Bit
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.02 seconds 
+     1000000 runs   0.14 seconds 
+     2000000 runs   0.29 seconds 
+     4000000 runs   0.58 seconds 
+     8000000 runs   1.17 seconds 
+    16000000 runs   2.34 seconds 
+
+Array2Glob8/7: O.K.      16000010
+
+Microseconds for one run through Dhrystone:         0.15 
+Dhrystones per Second:                         6843299 
+VAX  MIPS rating =                               3894.88 
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+
+Dhrystone Benchmark, Version 1.1 (Language: C or C++)
+
+Optimisation    Opt 3 64 Bit
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.00 seconds 
+     1000000 runs   0.02 seconds 
+    10000000 runs   0.24 seconds 
+    20000000 runs   0.49 seconds 
+    40000000 runs   0.99 seconds 
+    80000000 runs   2.00 seconds 
+
+Array2Glob8/7: O.K.      80000010
+
+Microseconds for one run through Dhrystone:         0.03 
+Dhrystones per Second:                        39928346 
+VAX  MIPS rating =                              22725.30 
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2670 MHz, Maximum 2673 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    No Opt 64 Bit
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.02 seconds 
+     1000000 runs   0.14 seconds 
+     2000000 runs   0.28 seconds 
+     4000000 runs   0.56 seconds 
+     8000000 runs   1.10 seconds 
+    16000000 runs   2.23 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    16000010
+Ptr_Glob->              Ptr_Comp:       *    37798480
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    37798480 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Microseconds for one run through Dhrystone:         0.14 
+Dhrystones per Second:                         7189267 
+VAX  MIPS rating =                               4091.79 
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+
+Dhrystone Benchmark, Version 2.1 (Language: C or C++)
+
+Optimisation    Opt 3 64 Bit
+Register option not selected
+
+       10000 runs   0.00 seconds 
+      100000 runs   0.00 seconds 
+     1000000 runs   0.04 seconds 
+    10000000 runs   0.39 seconds 
+    20000000 runs   0.76 seconds 
+    40000000 runs   1.53 seconds 
+    80000000 runs   3.07 seconds 
+
+Final values (* implementation-dependent):
+
+Int_Glob:      O.K.  5  Bool_Glob:     O.K.  1
+Ch_1_Glob:     O.K.  A  Ch_2_Glob:     O.K.  B
+Arr_1_Glob[8]: O.K.  7  Arr_2_Glob8/7: O.K.    80000010
+Ptr_Glob->              Ptr_Comp:       *    18211408
+  Discr:       O.K.  0  Enum_Comp:     O.K.  2
+  Int_Comp:    O.K.  17 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Next_Ptr_Glob->         Ptr_Comp:       *    18211408 same as above
+  Discr:       O.K.  0  Enum_Comp:     O.K.  1
+  Int_Comp:    O.K.  18 Str_Comp:      O.K.  DHRYSTONE PROGRAM, SOME STRING
+Int_1_Loc:     O.K.  5  Int_2_Loc:     O.K.  13
+Int_3_Loc:     O.K.  7  Enum_Loc:      O.K.  1  
+Str_1_Loc:                             O.K.  DHRYSTONE PROGRAM, 1'ST STRING
+Str_2_Loc:                             O.K.  DHRYSTONE PROGRAM, 2'ND STRING
+
+Microseconds for one run through Dhrystone:         0.04 
+Dhrystones per Second:                        26093258 
+VAX  MIPS rating =                              14851.03 
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - PC Version in 'C/C++'
+
+Optimisation No Opt 64 Bit
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00254    0.00008    0.00263     261.37     0.0077     0.0469
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.02 seconds
+      1000 times   0.16 seconds
+      2000 times   0.32 seconds
+      4000 times   0.65 seconds
+      8000 times   1.29 seconds
+Overhead for 1 matgen      0.00016 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.02 seconds
+       100 times   0.20 seconds
+       200 times   0.41 seconds
+       400 times   0.82 seconds
+       800 times   1.64 seconds
+Passes used        486 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00190    0.00006    0.00196     349.49     0.0057     0.0351
+    0.00188    0.00006    0.00194     354.49     0.0056     0.0346
+    0.00190    0.00006    0.00196     349.94     0.0057     0.0350
+    0.00193    0.00006    0.00199     344.65     0.0058     0.0356
+    0.00188    0.00006    0.00193     354.96     0.0056     0.0345
+Average                               350.71
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00016 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00192    0.00006    0.00198     346.75     0.0058     0.0354
+    0.00189    0.00006    0.00195     352.75     0.0057     0.0348
+    0.00191    0.00006    0.00197     348.44     0.0057     0.0352
+    0.00192    0.00006    0.00197     347.79     0.0058     0.0353
+    0.00188    0.00006    0.00194     353.98     0.0057     0.0346
+Average                               349.94
+
+Unrolled Double  Precision      349.94 Mflops 
+
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+Unrolled Double Precision Linpack Benchmark - PC Version in 'C/C++'
+
+Optimisation Opt 3 64 Bit
+
+norm resid      resid           machep         x[0]-1          x[n-1]-1
+   1.7    7.41628980e-14   2.22044605e-16  -1.49880108e-14  -1.89848137e-14
+
+Times are reported for matrices of order          100
+1 pass times for array with leading dimension of  201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00035    0.00002    0.00037    1870.19     0.0011     0.0066
+
+Calculating matgen overhead
+        10 times   0.00 seconds
+       100 times   0.00 seconds
+      1000 times   0.04 seconds
+     10000 times   0.43 seconds
+     20000 times   0.87 seconds
+     40000 times   1.73 seconds
+Overhead for 1 matgen      0.00004 seconds
+
+Calculating matgen/dgefa passes for 1 seconds
+        10 times   0.00 seconds
+       100 times   0.04 seconds
+      1000 times   0.34 seconds
+      2000 times   0.72 seconds
+      4000 times   1.40 seconds
+Passes used       2862 
+
+Times for array with leading dimension of 201
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00030    0.00001    0.00031    2205.78     0.0009     0.0056
+    0.00033    0.00001    0.00034    2038.47     0.0010     0.0060
+    0.00032    0.00001    0.00034    2047.80     0.0010     0.0060
+    0.00033    0.00001    0.00034    2002.93     0.0010     0.0061
+    0.00032    0.00001    0.00033    2061.22     0.0010     0.0059
+Average                              2071.24
+
+Calculating matgen2 overhead
+Overhead for 1 matgen      0.00004 seconds
+
+Times for array with leading dimension of 200
+
+      dgefa      dgesl      total     Mflops       unit      ratio
+    0.00031    0.00001    0.00032    2133.34     0.0009     0.0057
+    0.00031    0.00001    0.00032    2174.71     0.0009     0.0056
+    0.00031    0.00001    0.00032    2148.58     0.0009     0.0057
+    0.00034    0.00001    0.00035    1942.94     0.0010     0.0063
+    0.00031    0.00001    0.00032    2141.26     0.0009     0.0057
+Average                              2108.17
+
+Unrolled Double  Precision     2071.24 Mflops 
+
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+Single Precision C Whetstone Benchmark No Opt 64 Bit, Wed Dec  2 10:33:04 2015
+
+Calibrate
+       0.01 Seconds          1   Passes (x 100)
+       0.03 Seconds          5   Passes (x 100)
+       0.13 Seconds         25   Passes (x 100)
+       0.63 Seconds        125   Passes (x 100)
+       3.17 Seconds        625   Passes (x 100)
+
+Use 1970  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156       679.827              0.056
+N2 floating point     -1.12274742126464844       641.638              0.413
+N3 if then else        1.00000000000000000                 892.406    0.228
+N4 fixed point        12.00000000000000000                 779.739    0.796
+N5 sin,cos etc.        0.49911010265350342                  90.486    1.811
+N6 floating point      0.99999982118606567       345.354              3.077
+N7 assignments         3.00000000000000000                 188.824    1.928
+N8 exp,sqrt etc.       0.75110864639282227                  42.483    1.725
+
+MWIPS                                           1963.346             10.034
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+##########################################
+Single Precision C Whetstone Benchmark Opt 3 64 Bit, Wed Dec  2 10:33:23 2015
+
+Calibrate
+       0.00 Seconds          1   Passes (x 100)
+       0.01 Seconds          5   Passes (x 100)
+       0.07 Seconds         25   Passes (x 100)
+       0.36 Seconds        125   Passes (x 100)
+       1.77 Seconds        625   Passes (x 100)
+       8.93 Seconds       3125   Passes (x 100)
+
+Use 3499  passes (x 100)
+
+          Single Precision C/C++ Whetstone Benchmark
+
+Loop content                  Result              MFLOPS      MOPS   Seconds
+
+N1 floating point     -1.12475013732910156      1121.435              0.060
+N2 floating point     -1.12274742126464844      1130.494              0.416
+N3 if then else        1.00000000000000000                4266.529    0.085
+N4 fixed point        12.00000000000000000                4948.129    0.223
+N5 sin,cos etc.        0.49911010265350342                  86.039    3.384
+N6 floating point      0.99999982118606567       813.790              2.319
+N7 assignments         3.00000000000000000                1604.820    0.403
+N8 exp,sqrt etc.       0.75110864639282227                  41.658    3.125
+
+MWIPS                                           3494.187             10.014
+
+
+A new results file, whets.txt,  will have been created in the same
+directory as the .EXE files, if one did not already exist.
+
+L.L.N.L. 'C' KERNELS: MFLOPS   P.C.  VERSION 4.0
+
+Optimisation  No Opt 64 Bit
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+Calculating outer loop overhead
+      1000 times   0.00 seconds
+     10000 times   0.00 seconds
+    100000 times   0.00 seconds
+   1000000 times   0.00 seconds
+  10000000 times   0.05 seconds
+  20000000 times   0.10 seconds
+  40000000 times   0.20 seconds
+Overhead for each loop   5.0795e-09 seconds
+
+Calibrating part 1 of 3
+
+Loop count          4  0.00 seconds
+Loop count         16  0.00 seconds
+Loop count         64  0.00 seconds
+
+Loops  200 x  1 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1   7 x 127  5  8.898890e+08  0.99  898.43 1001  5.114652693224671e+04 16
+ 2  67 x 124  4  6.447008e+08  1.17  549.65  101  1.539721811668385e+03 15
+ 3   9 x 163  2  5.873868e+08  1.05  557.02 1001  1.000742883066363e+01 15
+ 4  14 x 152  2  5.107200e+08  1.12  455.26 1001  5.999250595473891e-01 16
+ 5  10 x  94  2  3.760000e+08  1.04  360.86 1001  4.548871642387267e+03 16
+ 6   3 x 138  2  3.285504e+08  0.95  344.54   64  4.375116344729986e+03 16
+ 7   4 x 120 16  1.528320e+09  1.10 1387.24  995  6.104251075174761e+04 16
+ 8  10 x  39 36  5.559840e+08  1.09  508.28  100  1.501268005625795e+05 15
+ 9  36 x  73 17  9.024552e+08  1.08  836.86  101  1.189443609974981e+05 16
+10  34 x  28  9  1.730736e+08  1.00  173.49  101  7.310369784325296e+04 16
+11  11 x  92  1  2.024000e+08  1.02  198.15 1001  3.342910972650109e+07 16
+12  12 x  77  1  1.848000e+08  0.95  194.61 1000  2.907141294167248e-05 16
+13  36 x  60  7  1.935360e+08  1.04  186.66   64  1.202533961842805e+11 15
+14   2 x  51 11  2.246244e+08  1.02  220.14 1001  3.165553044000335e+09 15
+15   1 x 147 33  4.851000e+08  1.01  480.00  101  3.943816690352044e+04 15
+16  25 x 183 10  4.849500e+08  1.15  421.97   75  5.650760000000000e+05 16
+17  35 x  93  9  5.917590e+08  1.05  565.96  101  1.114641772902486e+03 16
+18   2 x  46 44  4.007520e+08  1.07  376.12  100  1.015727037502299e+05 15
+19  39 x  75  6  3.545100e+08  1.02  346.71  101  5.421816960147207e+02 16
+20   1 x 166 26  8.632000e+08  1.01  853.89 1000  3.040644339351239e+07 16
+21   1 x   9  2  2.272500e+08  1.16  195.09  101  1.597308280710199e+08 15
+22  11 x 114 17  4.306236e+08  0.98  440.04  101  2.938604376566697e+02 16
+23   8 x  52 11  4.530240e+08  1.11  409.32  100  3.549900501563623e+04 16
+24   5 x 402  1  4.020000e+08  1.27  317.50 1001  5.000000000000000e+02 16
+
+                     Maximum   Rate 1387.24 
+                     Average   Rate  469.91 
+                     Geometric Mean  404.11 
+                     Harmonic  Mean  351.62 
+                     Minimum   Rate  173.49 
+
+                     Do Span    471
+
+Calibrating part 2 of 3
+
+Loop count          8  0.00 seconds
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+
+Loops  200 x  2 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  40 x 106  5  8.564800e+08  0.94  907.01  101  5.253344778937972e+02 16
+ 2  40 x  90  4  5.587200e+08  1.03  541.46  101  1.539721811668385e+03 15
+ 3  53 x 136  2  5.824064e+08  1.14  510.21  101  1.009741436578952e+00 16
+ 4  70 x 138  2  4.636800e+08  1.11  419.23  101  5.999250595473891e-01 16
+ 5  55 x  85  2  3.740000e+08  1.09  341.90  101  4.589031939600982e+01 16
+ 6   7 x 126  2  3.386880e+08  1.10  308.42   32  8.631675645333210e+01 16
+ 7  22 x  90 16  1.279872e+09  0.96 1330.83  101  6.345586315784055e+02 16
+ 8   6 x  32 36  5.474304e+08  1.13  482.44  100  1.501268005625795e+05 15
+ 9  21 x  63 17  9.086364e+08  1.17  777.78  101  1.189443609974981e+05 16
+10  19 x  25  9  1.727100e+08  1.05  164.57  101  7.310369784325296e+04 16
+11  64 x  81  1  2.073600e+08  1.07  193.13  101  3.433560407475758e+04 16
+12  68 x  78  1  2.121600e+08  1.07  197.65  100  7.127569130821465e-06 16
+13  41 x  49  7  1.800064e+08  1.00  179.93   32  9.816387810944356e+10 15
+14  10 x  50 11  2.222000e+08  1.05  211.27  101  3.039983465145392e+07 15
+15   1 x  81 33  5.346000e+08  1.12  479.45  101  3.943816690352044e+04 15
+16  27 x 145 10  4.384800e+08  1.06  414.50   40  6.480410000000000e+05 16
+17  20 x  74  9  5.381280e+08  0.97  552.97  101  1.114641772902486e+03 16
+18   1 x  43 44  3.746160e+08  1.06  354.68  100  1.015727037502299e+05 15
+19  23 x  60  6  3.345120e+08  1.00  335.49  101  5.421816960147207e+02 16
+20   8 x 109 26  9.068800e+08  1.11  820.45  100  3.126205178815431e+04 16
+21   1 x   9  2  2.250000e+08  1.18  190.96   50  7.824524877232093e+07 16
+22   7 x 107 17  5.144132e+08  1.19  432.63  101  2.938604376566697e+02 16
+23   5 x  43 11  4.682700e+08  1.17  399.25  100  3.549900501563623e+04 16
+24  31 x 267  1  3.310800e+08  1.16  285.17  101  5.000000000000000e+01 16
+
+                     Maximum   Rate 1330.83 
+                     Average   Rate  451.31 
+                     Geometric Mean  387.73 
+                     Harmonic  Mean  337.73 
+                     Minimum   Rate  164.57 
+
+                     Do Span     90
+
+Calibrating part 3 of 3
+
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+Loop count        512  0.01 seconds
+
+Loops  200 x  8 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  28 x 145  5  8.769600e+08  1.05  838.85   27  3.855104502494961e+01 16
+ 2  46 x 154  4  4.987136e+08  1.11  447.80   15  3.953296986903059e+01 16
+ 3  37 x 174  2  5.562432e+08  1.05  530.17   27  2.699309089320672e-01 16
+ 4  38 x 204  2  3.720960e+08  0.97  384.62   27  5.999250595473891e-01 16
+ 5  40 x 110  2  3.660800e+08  1.09  336.59   27  3.182615248447483e+00 16
+ 6  21 x 182  2  2.935296e+08  1.08  272.51    8  1.120309393467088e+00 15
+ 7  20 x 123 16  1.322496e+09  1.01 1310.39   21  2.845720217644024e+01 16
+ 8   9 x  39 36  5.256576e+08  1.06  497.26   14  2.960543667875005e+03 15
+ 9  26 x  76 17  8.062080e+08  0.99  812.36   15  2.623968460874250e+03 16
+10  25 x  31  9  1.674000e+08  1.03  161.78   15  1.651291227698265e+03 16
+11  46 x 109  1  2.085824e+08  1.10  190.42   27  6.551161335845770e+02 16
+12  48 x 104  1  2.076672e+08  1.07  193.82   26  1.943435981130448e-06 16
+13  31 x  67  7  1.860992e+08  1.08  172.59    8  3.847124199949431e+10 15
+14   8 x  60 11  2.280960e+08  1.09  208.36   27  2.923540598672009e+06 15
+15   1 x 132 33  4.878720e+08  1.05  462.44   15  1.108997288134785e+03 16
+16  14 x 166 10  4.090240e+08  1.06  386.40   15  5.152160000000000e+05 16
+17  26 x 121  9  6.795360e+08  1.13  602.96   15  2.947368618589361e+01 16
+18   2 x  39 44  3.569280e+08  0.97  366.90   14  9.700646212337041e+02 16
+19  28 x  85  6  3.427200e+08  1.02  334.89   15  1.268230698051003e+01 15
+20   7 x 107 26  8.101184e+08  1.00  812.67   26  5.987713249475302e+02 16
+21   1 x   6  2  2.400000e+08  1.33  180.19   20  5.009945671204667e+07 16
+22   8 x 131 17  4.275840e+08  1.06  403.77   15  6.109968728263972e+00 16
+23   7 x  54 11  4.324320e+08  1.11  389.41   14  4.850340602749970e+02 16
+24  23 x 252  1  2.411136e+08  0.92  262.30   27  1.300000000000000e+01 16
+
+                     Maximum   Rate 1310.39 
+                     Average   Rate  439.98 
+                     Geometric Mean  376.02 
+                     Harmonic  Mean  326.53 
+                     Minimum   Rate  161.78 
+
+                     Do Span     19
+
+                Overall
+
+                Part 1 weight 1
+                Part 2 weight 2
+                Part 3 weight 1
+
+                     Maximum   Rate 1387.24 
+                     Average   Rate  453.12 
+                     Geometric Mean  388.77 
+                     Harmonic  Mean  338.17 
+                     Minimum   Rate  161.78 
+
+                     Do Span    167
+
+L.L.N.L. 'C' KERNELS: MFLOPS   P.C.  VERSION 4.0
+
+Optimisation  Opt 3 64 Bit
+
+  ####################################################
+  getDetails and MHz
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-cpu, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+Calculating outer loop overhead
+      1000 times   0.00 seconds
+     10000 times   0.00 seconds
+    100000 times   0.00 seconds
+   1000000 times   0.00 seconds
+  10000000 times   0.05 seconds
+  20000000 times   0.09 seconds
+  40000000 times   0.17 seconds
+  80000000 times   0.35 seconds
+Overhead for each loop   4.3794e-09 seconds
+
+Calibrating part 1 of 3
+
+Loop count          4  0.00 seconds
+Loop count         16  0.00 seconds
+Loop count         64  0.00 seconds
+
+Loops  200 x  1 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1   7 x 279  5  1.954953e+09  0.93 2099.92 1001  5.114652693224671e+04 16
+ 2  67 x 408  4  2.121274e+09  1.23 1726.43  101  1.539721811668385e+03 15
+ 3   9 x 550  2  1.981980e+09  1.15 1726.53 1001  1.000742883066363e+01 15
+ 4  14 x 575  2  1.932000e+09  1.20 1611.68 1001  5.999250595473891e-01 16
+ 5  10 x 111  2  4.440000e+08  1.10  402.99 1001  4.548871642387267e+03 16
+ 6   3 x 494  2  1.176115e+09  1.01 1164.44   64  4.375116344729986e+03 16
+ 7   4 x 273 16  3.476928e+09  1.11 3123.16  995  6.104251075174761e+04 16
+ 8  10 x 284 36  4.048704e+09  1.10 3679.91  100  1.501268005625795e+05 15
+ 9  36 x 254 17  3.140050e+09  1.31 2400.92  101  1.189443609974981e+05 16
+10  34 x 173  9  1.069348e+09  0.98 1089.23  101  7.310369784325296e+04 16
+11  11 x 439  1  9.658000e+08  1.13  851.67 1001  3.342910972650109e+07 16
+12  12 x 377  1  9.048000e+08  1.09  832.92 1000  2.907141294167248e-05 16
+13  36 x 115  7  3.709440e+08  1.12  332.00   64  1.202533961842805e+11 15
+14   2 x 163 11  7.179172e+08  1.04  689.63 1001  3.165553044000335e+09 15
+15   1 x 280 33  9.240000e+08  1.02  902.92  101  3.943816690352044e+04 15
+16  25 x 586 10  1.552900e+09  1.24 1256.89   75  5.650760000000000e+05 16
+17  35 x 231  9  1.469853e+09  1.09 1348.38  101  1.114641772902486e+03 16
+18   2 x 226 44  1.968912e+09  1.12 1755.54  100  1.015727037502299e+05 15
+19  39 x 128  6  6.050304e+08  1.07  567.73  101  5.421816960147207e+02 16
+20   1 x 142 26  7.384000e+08  1.13  651.84 1000  3.040644339351239e+07 16
+21   1 x  62  2  1.565500e+09  1.07 1464.58  101  1.597308280710199e+08 15
+22  11 x 150 17  5.666100e+08  1.17  484.75  101  2.938604376566697e+02 16
+23   8 x 178 11  1.550736e+09  1.09 1423.85  100  3.549900501563623e+04 16
+24   5 x 713  1  7.130000e+08  1.01  706.31 1001  5.000000000000000e+02 16
+
+                     Maximum   Rate 3679.91 
+                     Average   Rate 1345.59 
+                     Geometric Mean 1123.63 
+                     Harmonic  Mean  932.67 
+                     Minimum   Rate  332.00 
+
+                     Do Span    471
+
+Calibrating part 2 of 3
+
+Loop count          8  0.00 seconds
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+
+Loops  200 x  2 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  40 x 292  5  2.359360e+09  1.20 1966.61  101  5.253344778937972e+02 16
+ 2  40 x 286  4  1.775488e+09  1.02 1738.77  101  1.539721811668385e+03 15
+ 3  53 x 349  2  1.494558e+09  0.92 1626.92  101  1.009741436578952e+00 16
+ 4  70 x 542  2  1.821120e+09  1.26 1447.64  101  5.999250595473891e-01 16
+ 5  55 x  94  2  4.136000e+08  0.97  427.65  101  4.589031939600982e+01 16
+ 6   7 x 476  2  1.279488e+09  1.29  989.58   32  8.631675645333210e+01 16
+ 7  22 x 201 16  2.858381e+09  0.95 3013.29  101  6.345586315784055e+02 16
+ 8   6 x 233 36  3.985978e+09  1.09 3655.89  100  1.501268005625795e+05 15
+ 9  21 x 160 17  2.307648e+09  0.97 2373.44  101  1.189443609974981e+05 16
+10  19 x 169  9  1.167520e+09  1.14 1025.97  101  7.310369784325296e+04 16
+11  64 x 294  1  7.526400e+08  0.92  821.19  101  3.433560407475758e+04 16
+12  68 x 314  1  8.540800e+08  1.09  780.08  100  7.127569130821465e-06 16
+13  41 x  82  7  3.012352e+08  0.89  338.79   32  9.816387810944356e+10 15
+14  10 x 210 11  9.332400e+08  1.18  789.84  101  3.039983465145392e+07 15
+15   1 x 121 33  7.986000e+08  0.88  907.85  101  3.943816690352044e+04 15
+16  27 x 484 10  1.463616e+09  1.17 1255.21   40  6.480410000000000e+05 16
+17  20 x 183  9  1.330776e+09  0.98 1362.44  101  1.114641772902486e+03 16
+18   1 x 229 44  1.995048e+09  1.15 1732.01  100  1.015727037502299e+05 15
+19  23 x 105  6  5.853960e+08  1.07  546.90  101  5.421816960147207e+02 16
+20   8 x  81 26  6.739200e+08  1.03  651.86  100  3.126205178815431e+04 16
+21   1 x  55  2  1.375000e+09  0.91 1513.65   50  7.824524877232093e+07 16
+22   7 x  97 17  4.663372e+08  1.05  444.35  101  2.938604376566697e+02 16
+23   5 x 111 11  1.208790e+09  0.87 1391.12  100  3.549900501563623e+04 16
+24  31 x 499  1  6.187600e+08  0.98  630.64  101  5.000000000000000e+01 16
+
+                     Maximum   Rate 3655.89 
+                     Average   Rate 1309.65 
+                     Geometric Mean 1095.18 
+                     Harmonic  Mean  914.48 
+                     Minimum   Rate  338.79 
+
+                     Do Span     90
+
+Calibrating part 3 of 3
+
+Loop count         32  0.00 seconds
+Loop count        128  0.00 seconds
+Loop count        512  0.00 seconds
+
+Loops  200 x  8 x Passes
+
+Kernel       Floating Pt ops
+No  Passes E No    Total      Secs.  MFLOPS Span     Checksums          OK
+------------ -- ------------- ----- ------- ---- ---------------------- --
+ 1  28 x 342  5  2.068416e+09  1.17 1767.57   27  3.855104502494961e+01 16
+ 2  46 x 462  4  1.496141e+09  1.07 1399.26   15  3.953296986903059e+01 16
+ 3  37 x 675  2  2.157840e+09  1.16 1858.47   27  2.699309089320672e-01 16
+ 4  38 x 638  2  1.163712e+09  0.99 1178.81   27  5.999250595473891e-01 16
+ 5  40 x 169  2  5.624320e+08  0.99  568.80   27  3.182615248447483e+00 16
+ 6  21 x 767  2  1.237018e+09  1.54  805.32    8  1.120309393467088e+00 15
+ 7  20 x 285 16  3.064320e+09  1.01 3023.09   21  2.845720217644024e+01 16
+ 8   9 x 239 36  3.221338e+09  0.92 3485.40   14  2.960543667875005e+03 15
+ 9  26 x 276 17  2.927808e+09  1.24 2361.03   15  2.623968460874250e+03 16
+10  25 x 202  9  1.090800e+09  1.03 1060.97   15  1.651291227698265e+03 16
+11  46 x 501  1  9.587136e+08  1.13  844.93   27  6.551161335845770e+02 16
+12  48 x 415  1  8.286720e+08  1.15  718.18   26  1.943435981130448e-06 16
+13  31 x 113  7  3.138688e+08  0.94  335.22    8  3.847124199949431e+10 15
+14   8 x 289 11  1.098662e+09  1.28  861.45   27  2.923540598672009e+06 15
+15   1 x 237 33  8.759520e+08  1.02  856.86   15  1.108997288134785e+03 16
+16  14 x 641 10  1.579424e+09  1.22 1289.81   15  5.152160000000000e+05 16
+17  26 x 235  9  1.319760e+09  0.87 1512.06   15  2.947368618589361e+01 16
+18   2 x 193 44  1.766336e+09  1.09 1617.00   14  9.700646212337041e+02 16
+19  28 x 156  6  6.289920e+08  1.10  571.04   15  1.268230698051003e+01 15
+20   7 x  97 26  7.344064e+08  1.11  660.22   26  5.987713249475302e+02 16
+21   1 x  43  2  1.720000e+09  1.18 1461.56   20  5.009945671204667e+07 16
+22   8 x 117 17  3.818880e+08  0.82  463.56   15  6.109968728263972e+00 16
+23   7 x 221 11  1.769768e+09  1.05 1687.22   14  4.850340602749970e+02 16
+24  23 x 755  1  7.223840e+08  1.04  696.75   27  1.300000000000000e+01 16
+
+                     Maximum   Rate 3485.40 
+                     Average   Rate 1295.19 
+                     Geometric Mean 1097.44 
+                     Harmonic  Mean  932.85 
+                     Minimum   Rate  335.22 
+
+                     Do Span     19
+
+                Overall
+
+                Part 1 weight 1
+                Part 2 weight 2
+                Part 3 weight 1
+
+                     Maximum   Rate 3679.91 
+                     Average   Rate 1315.02 
+                     Geometric Mean 1102.79 
+                     Harmonic  Mean  923.53 
+                     Minimum   Rate  332.00 
+
+                     Do Span    167
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ SUMMARY ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2671 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Dhrystone Benchmark  1.1 No Opt 64 Bit via C/C++ Wed Dec  2 10:31:47 2015
+
+ VAX MIPS rating:           3894.88
+
+ Correct result
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Dhrystone Benchmark  1.1 Opt 3 64 Bit via C/C++ Wed Dec  2 10:31:56 2015
+
+ VAX MIPS rating:          22725.30
+
+ Correct result
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2670 MHz, Maximum 2673 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 No Opt 64 Bit via C/C++ Wed Dec  2 10:32:04 2015
+
+ VAX MIPS rating:           4091.79
+
+ Numeric results were correct
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Dhrystone Benchmark 2.1 Opt 3 64 Bit via C/C++ Wed Dec  2 10:32:15 2015
+
+ VAX MIPS rating:          14851.03
+
+ Numeric results were correct
+
+ ########################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation No Opt 64 Bit, Wed Dec  2 10:32:37 2015
+
+ Speed     353.98 MFLOPS
+
+ Numeric results were as expected
+
+ ########################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ ########################################################
+
+ Linpack Double Precision Unrolled Benchmark n @ 100
+ Optimisation Opt 3 64 Bit, Wed Dec  2 10:32:59 2015
+
+ Speed    2174.71 MFLOPS
+
+ Numeric results were as expected
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Livermore Loops Benchmark No Opt 64 Bit via C/C++ Wed Dec  2 10:33:50 2015
+
+ MFLOPS for 24 loops
+  898.4  549.6  557.0  455.3  360.9  344.5 1387.2  508.3  836.9  173.5  198.2  194.6
+  186.7  220.1  480.0  422.0  566.0  376.1  346.7  853.9  195.1  440.0  409.3  317.5
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+  1387.2   453.1   388.8   338.2   161.8
+
+ Numeric results were as expected
+
+ #####################################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+ #####################################################
+
+ Livermore Loops Benchmark Opt 3 64 Bit via C/C++ Wed Dec  2 10:35:14 2015
+
+ MFLOPS for 24 loops
+ 2099.9 1726.4 1726.5 1611.7  403.0 1164.4 3123.2 3679.9 2400.9 1089.2  851.7  832.9
+  332.0  689.6  902.9 1256.9 1348.4 1755.5  567.7  651.8 1464.6  484.7 1423.8  706.3
+
+ Overall Ratings
+ Maximum Average Geomean Harmean Minimum
+  3679.9  1315.0  1102.8   923.5   332.0
+
+ Numeric results were as expected
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2674 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+##############################################
+
+Whetstone Single Precision C Benchmark  No Opt 64 Bit, Wed Dec  2 10:33:04 2015
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156       679.827               0.056
+N2 floating point      -1.12274742126464844       641.638               0.413
+N3 if then else         1.00000000000000000                 892.406     0.228
+N4 fixed point         12.00000000000000000                 779.739     0.796
+N5 sin,cos etc.         0.49911010265350342                  90.486     1.811
+N6 floating point       0.99999982118606567       345.354               3.077
+N7 assignments          3.00000000000000000                 188.824     1.928
+N8 exp,sqrt etc.        0.75110864639282227                  42.483     1.725
+
+MWIPS                                            1963.346              10.034
+
+Results  to  load  to  spreadsheet        MWIPS   Mflops1   Mflops2   Mflops3   Cosmops   Expmops  Fixpmops    Ifmops    Eqmops
+Results  to  load  to  spreadsheet     1963.346   679.827   641.638   345.354    90.486    42.483   779.739   892.406   188.824
+
+
+##############################################
+
+  Assembler CPUID and RDTSC       
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5 
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz 
+  Measured - Minimum 2675 MHz, Maximum 2675 MHz 
+  Linux Functions 
+  get_nprocs() - CPUs 2, Configured CPUs 2 
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes 
+  uname() - Linux, vm-cpu, 3.13.0-68-generic 
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64 
+
+##############################################
+
+Whetstone Single Precision C Benchmark  Opt 3 64 Bit, Wed Dec  2 10:33:23 2015
+
+
+Loop content                   Result              MFLOPS      MOPS   Seconds
+
+N1 floating point      -1.12475013732910156      1121.435               0.060
+N2 floating point      -1.12274742126464844      1130.494               0.416
+N3 if then else         1.00000000000000000                4266.529     0.085
+N4 fixed point         12.00000000000000000                4948.129     0.223
+N5 sin,cos etc.         0.49911010265350342                  86.039     3.384
+N6 floating point       0.99999982118606567       813.790               2.319
+N7 assignments          3.00000000000000000                1604.820     0.403
+N8 exp,sqrt etc.        0.75110864639282227                  41.658     3.125
+
+MWIPS                                            3494.187              10.014
+
+Results  to  load  to  spreadsheet        MWIPS   Mflops1   Mflops2   Mflops3   Cosmops   Expmops  Fixpmops    Ifmops    Eqmops
+Results  to  load  to  spreadsheet     3494.187  1121.435  1130.494   813.790    86.039    41.658  4948.129  4266.529  1604.820
+
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...

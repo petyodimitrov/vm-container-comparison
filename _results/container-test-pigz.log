@@ -1,0 +1,59 @@
+Sending build context to Docker daemon 4.608 kB
+Step 0 : FROM ubuntu:14.04.3
+ ---> e9ae3c220b23
+Step 1 : MAINTAINER Petyo Dimitrov
+ ---> Using cache
+ ---> 0eb6faaa424e
+Step 2 : ENV REFRESHED_AT 2015-12-02
+ ---> Using cache
+ ---> 0d094c6aab6c
+Step 3 : VOLUME "/common"
+ ---> Using cache
+ ---> ac7943b7de21
+Step 4 : RUN apt-get update -y && apt-get install -y pigz
+ ---> Using cache
+ ---> 49b76fde4885
+Successfully built 49b76fde4885
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and director
+ies added to build context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions f
+or sensitive files and directories.
+
+real    0m11.413s
+user    0m18.100s
+sys     0m4.700s
+
+real    0m11.624s
+user    0m14.610s
+sys     0m8.610s
+
+real    0m11.516s
+user    0m17.730s
+sys     0m5.270s
+
+real    0m11.620s
+user    0m14.590s
+sys     0m8.610s
+
+real    0m12.489s
+user    0m18.040s
+sys     0m6.810s
+
+real    0m12.395s
+user    0m18.630s
+sys     0m6.000s
+
+real    0m11.767s
+user    0m17.130s
+sys     0m6.310s
+
+real    0m11.814s
+user    0m18.400s
+sys     0m5.190s
+
+real    0m11.691s
+user    0m17.580s
+sys     0m5.770s
+
+real    0m11.941s
+user    0m18.020s
+sys     0m5.820s

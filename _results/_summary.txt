@@ -1,0 +1,36 @@
+COMMON:
+=======
+ * CPU: 2 cores, 2674.996 MHz, L1/L2/L3 cache 32K/256K/8192K, x86_64 arch
+ * RAM: 4096 MB
+ * OS: Ubuntu 14.04.3 LTS, Kernel: 3.13.0-68
+ 
+PROVISION: (start + stop)
+==========
+ * vm: 77.8s
+ * docker: 0,969s (~80 times faster)
+ 
+COMPRESSION: (1 501 191 694 bytes, in-memory input, null output, level 2 compression, pigz version 2.3-2)
+============
+ * vm: 12.37s
+ * docker: 11.83s (must be retested on linux!!!)
+
+MEMORY BANDWIDTH: (mbw version 1.4 (built from source), test runs 10, block size 4096B, memory array 1024MB)
+=================
+ * vm: 3357.481 MiB/s
+   AVG     Method: MEMCPY  Elapsed: 0.30499        MiB: 1024.00000 Copy: 3357.481 MiB/s
+   AVG     Method: DUMB    Elapsed: 0.72613        MiB: 1024.00000 Copy: 1410.213 MiB/s
+   AVG     Method: MCBLOCK Elapsed: 0.29467        MiB: 1024.00000 Copy: 3475.067 MiB/s
+ * docker: 3431.042 MiB/s (must be retested on linux!!!)
+   AVG     Method: MEMCPY  Elapsed: 0.29845        MiB: 1024.00000 Copy: 3431.042 MiB/s
+   AVG     Method: DUMB    Elapsed: 0.73058        MiB: 1024.00000 Copy: 1401.629 MiB/s
+   AVG     Method: MCBLOCK Elapsed: 0.29157        MiB: 1024.00000 Copy: 3512.025 MiB/s
+   
+RANDOM/SERIAL MEMORY BANDWIDTH:
+ * vm:
+ * docker:
+
+CPU: (classical benchmarks: whetstone, dhrystone, linpack, livermore):
+====
+ * vm:
+ * docker: 
+

@@ -1,0 +1,57 @@
+ensure image is downloaded...
+14.04.3: Pulling from library/ubuntu
+Digest: sha256:0ca448cb174259ddb2ae6e213ebebe7590862d522fe38971e1175faedf0b6823
+Status: Image is up to date for ubuntu:14.04.3
+start:  1:23:11,33
+testing
+end:    1:23:12,14
+.
+start:  1:23:12,14
+testing
+end:    1:23:13,30
+.
+start:  1:23:13,30
+testing
+end:    1:23:14,13
+.
+start:  1:23:14,13
+testing
+end:    1:23:15,01
+.
+start:  1:23:15,01
+testing
+end:    1:23:15,98
+.
+start:  1:23:15,98
+testing
+end:    1:23:16,86
+.
+start:  1:23:16,86
+testing
+end:    1:23:17,83
+.
+start:  1:23:17,83
+testing
+end:    1:23:18,83
+.
+start:  1:23:18,83
+testing
+end:    1:23:19,86
+.
+start:  1:23:19,86
+testing
+end:    1:23:20,73
+.
+
+
+SUMMARY:
+0,81
+1,16
+0,83
+0,88
+0,99
+0,88
+0,97
+1,00
+1,30
+0,87

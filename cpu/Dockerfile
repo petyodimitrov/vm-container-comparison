@@ -1,0 +1,11 @@
+FROM ubuntu:14.04.3
+MAINTAINER Petyo Dimitrov
+ENV REFRESHED_AT 2015-12-02
+
+COPY provision.sh /home/testing/provision.sh
+RUN /bin/bash -c /home/testing/provision.sh
+
+COPY runall.sh /home/testing/runall.sh
+
+WORKDIR /home/testing
+CMD ["/home/testing/runall.sh"]

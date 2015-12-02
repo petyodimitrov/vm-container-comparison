@@ -1,0 +1,154 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/trusty64'...
+
+[KProgress: 90%
+[K==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/trusty64' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20151119.0.0'. The latest is version '20151130.0.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Setting the name of the VM: vm-mem
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+    default: 
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default: 
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default: 
+    default: Guest Additions Version: 4.3.34
+    default: VirtualBox Version: 5.0
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => D:/prj/vm-vs-container/vb-docker-comparison/vm-mem
+==> default: Running provisioner: shell...
+    default: Running: C:/Users/Petyo/AppData/Local/Temp/vagrant-shell20151202-2232-2ek2tf.sh
+==> default: stdin: is not a tty
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default: Reading state information...
+==> default: wget is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+==> default: memory_benchmarks/
+==> default: memory_benchmarks/source_code/
+==> default: memory_benchmarks/source_code/randmem/
+==> default: memory_benchmarks/source_code/randmem/common_64bit/
+==> default: memory_benchmarks/source_code/randmem/common_64bit/cpuidh.h
+==> default: memory_benchmarks/source_code/randmem/common_64bit/cpuida64.asm
+==> default: memory_benchmarks/source_code/randmem/common_64bit/test
+==> default: memory_benchmarks/source_code/randmem/common_64bit/README
+==> default: memory_benchmarks/source_code/randmem/common_64bit/cpuida64.o
+==> default: memory_benchmarks/source_code/randmem/common_64bit/cpuidc64.o
+==> default: memory_benchmarks/source_code/randmem/common_64bit/test.c
+==> default: memory_benchmarks/source_code/randmem/common_64bit/cpuidc64.c
+==> default: memory_benchmarks/source_code/randmem/README
+==> default: memory_benchmarks/source_code/randmem/common_32bit/
+==> default: memory_benchmarks/source_code/randmem/common_32bit/cpuidh.h
+==> default: memory_benchmarks/source_code/randmem/common_32bit/test
+==> default: memory_benchmarks/source_code/randmem/common_32bit/README
+==> default: memory_benchmarks/source_code/randmem/common_32bit/cpuida.asm
+==> default: memory_benchmarks/source_code/randmem/common_32bit/test.c
+==> default: memory_benchmarks/source_code/randmem/common_32bit/cpuidc.c
+==> default: memory_benchmarks/source_code/randmem/common_32bit/cpuidc.o
+==> default: memory_benchmarks/source_code/randmem/common_32bit/cpuida.o
+==> default: memory_benchmarks/source_code/randmem/randmem.c
+==> default: memory_benchmarks/source_code/busspeed/
+==> default: memory_benchmarks/source_code/busspeed/common_64bit/
+==> default: memory_benchmarks/source_code/busspeed/common_64bit/cpuidh.h
+==> default: memory_benchmarks/source_code/busspeed/common_64bit/busasm64.asm
+==> default: memory_benchmarks/source_code/busspeed/common_64bit/cpuidc64.c
+==> default: memory_benchmarks/source_code/busspeed/README
+==> default: memory_benchmarks/source_code/busspeed/common_32bit/
+==> default: memory_benchmarks/source_code/busspeed/common_32bit/cpuidh.h
+==> default: memory_benchmarks/source_code/busspeed/common_32bit/cpuidc.c
+==> default: memory_benchmarks/source_code/busspeed/common_32bit/busasm.asm
+==> default: memory_benchmarks/source_code/busspeed/busspeed.c
+==> default: memory_benchmarks/source_code/ssefpu/
+==> default: memory_benchmarks/source_code/ssefpu/SSEfpu.c
+==> default: memory_benchmarks/source_code/ssefpu/common_64bit/
+==> default: memory_benchmarks/source_code/ssefpu/common_64bit/cpuidh.h
+==> default: memory_benchmarks/source_code/ssefpu/common_64bit/sse64.asm
+==> default: memory_benchmarks/source_code/ssefpu/common_64bit/cpuidc64.c
+==> default: memory_benchmarks/source_code/ssefpu/README
+==> default: memory_benchmarks/source_code/ssefpu/common_32bit/
+==> default: memory_benchmarks/source_code/ssefpu/common_32bit/cpuidh.h
+==> default: memory_benchmarks/source_code/ssefpu/common_32bit/cpuidc.c
+==> default: memory_benchmarks/source_code/ssefpu/common_32bit/sse32.asm
+==> default: memory_benchmarks/bin_32_and_64/
+==> default: memory_benchmarks/bin_32_and_64/randmem32
+==> default: memory_benchmarks/bin_32_and_64/ssefpu32
+==> default: memory_benchmarks/bin_32_and_64/Example Logs
+==> default: memory_benchmarks/bin_32_and_64/randmem64
+==> default: memory_benchmarks/bin_32_and_64/ssefpu64
+==> default: memory_benchmarks/bin_32_and_64/busspeed64
+==> default: memory_benchmarks/bin_32_and_64/busspeed32
+==> default: memory_benchmarks/README
+  ####################################################
+  getDetails and MHz
+
+
+  Assembler CPUID and RDTSC      
+  CPU GenuineIntel, Features Code 178BFBFF, Model Code 000106E5
+  Intel(R) Core(TM) i5 CPU         750  @ 2.67GHz
+  Measured - Minimum 2673 MHz, Maximum 2676 MHz
+  Linux Functions
+  get_nprocs() - CPUs 2, Configured CPUs 2
+  get_phys_pages() and size - RAM Size  3.86 GB, Page Size 4096 Bytes
+  uname() - Linux, vm-mem, 3.13.0-68-generic
+  #111-Ubuntu SMP Fri Nov 6 18:17:06 UTC 2015, x86_64
+
+ #####################################################
+
+   Random/Serial Memory Test 64 Bit Version 2 Wed Dec  2 13:53:01 2015
+ 
+         Integer.......................  Double/Integer................
+         Serial........  Random........  Serial........  Random........
+    RAM   Read   Rd/Wrt   Read   Rd/Wrt   Read   Rd/Wrt   Read   Rd/Wrt
+     KB  MB/Sec  MB/Sec  MB/Sec  MB/Sec  MB/Sec  MB/Sec  MB/Sec  MB/Sec
+
+      6   11357    7349   11411    7477   16891   11220   17041   11274 
+     12   10136    5683   11244    7086   16465   10933   16710   10900 
+     24   10214    6313   10717    7130   13587   10078   15503   10392 
+     48    8020    5772    6219    5091   10882    6328   13201    9135 
+     96    8596    6812    5355    4691   12948    7315    9159    7407 
+    192    5906    5038    3105    4004   12525    6491    7415    6129 
+    384    9349    6207    4147    3689   14301    8348    6020    3095 
+    768    8883    5798    3215    2968   14425    9962    5922    5073 
+   1536   10094    6103    2231    2465    9671    9128    5362    4478 
+   3072    9609    6153    1007     979   12953    8661    4740    4181 
+   6144    9254    5913     868     862   11570    8442    1459    1332 
+  12288    6940    4468     667     620    7604    5598    1051     970 
+  24576    6944    3376     545     472    7286    5391     868     804 
+  49152    7064    4352     446     417    5620    4705     645     630 
+  98304    6414    4029     348     294    4285    4734     608     560 
+ 196608    6801    4477     313     282    6839    5199     508     417 
+ 393216    6986    4374     285     238    6677    5268     450     415 
+ 786432    6052    4374     249     224    6863    5246     408     375 
+1572864    7030    4327     188     178    5833    5236     342     312 
+
+  Press Enter
+
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...

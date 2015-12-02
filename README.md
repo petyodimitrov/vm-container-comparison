@@ -1,0 +1,1 @@
+Run test.bat / test.sh in each of the directories and redirect the output to a file.

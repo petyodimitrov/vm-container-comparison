@@ -1,0 +1,137 @@
+Bringing machine 'default' up with 'virtualbox' provider...
+==> default: Importing base box 'ubuntu/trusty64'...
+==> default: Matching MAC address for NAT networking...
+==> default: Checking if box 'ubuntu/trusty64' is up to date...
+==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20151119.0.0'. The latest is version '20151130.0.0'. Run
+==> default: `vagrant box update` to update.
+==> default: Setting the name of the VM: vm-mbw
+==> default: Clearing any previously set forwarded ports...
+==> default: Clearing any previously set network interfaces...
+==> default: Preparing network interfaces based on configuration...
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 22 => 2222 (adapter 1)
+==> default: Running 'pre-boot' VM customizations...
+==> default: Booting VM...
+==> default: Waiting for machine to boot. This may take a few minutes...
+    default: SSH address: 127.0.0.1:2222
+    default: SSH username: vagrant
+    default: SSH auth method: private key
+    default: Warning: Connection timeout. Retrying...
+    default:
+    default: Vagrant insecure key detected. Vagrant will automatically replace
+    default: this with a newly generated keypair for better security.
+    default:
+    default: Inserting generated public key within guest...
+    default: Removing insecure key from the guest if it's present...
+    default: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> default: Machine booted and ready!
+==> default: Checking for guest additions in VM...
+    default: The guest additions on this VM do not match the installed version of
+    default: VirtualBox! In most cases this is fine, but in rare cases it can
+    default: prevent things such as shared folders from working properly. If you see
+    default: shared folder errors, please make sure the guest additions within the
+    default: virtual machine match the version of VirtualBox you have installed on
+    default: your host and reload your VM.
+    default:
+    default: Guest Additions Version: 4.3.34
+    default: VirtualBox Version: 5.0
+==> default: Setting hostname...
+==> default: Mounting shared folders...
+    default: /vagrant => D:/prj/vm-vs-container/vb-docker-comparison/vm-mbw
+==> default: Running provisioner: shell...
+    default: Running: C:/Users/Petyo/AppData/Local/Temp/vagrant-shell20151202-7576-1i3avvq.sh
+==> default: stdin: is not a tty
+==> default: Reading package lists...
+==> default: Building dependency tree...
+==> default:
+==> default: Reading state information...
+==> default: wget is already the newest version.
+==> default: 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+==> default: --2015-12-02 01:10:26--  https://github.com/raas/mbw/archive/v1.4.tar.gz
+==> default: Resolving github.com (github.com)...
+==> default: 192.30.252.129
+==> default: Connecting to github.com (github.com)|192.30.252.129|:443...
+==> default: connected.
+==> default: HTTP request sent, awaiting response...
+==> default: 302 Found
+==> default: Location: https://codeload.github.com/raas/mbw/tar.gz/v1.4 [following]
+==> default: --2015-12-02 01:10:27--  https://codeload.github.com/raas/mbw/tar.gz/v1.4
+==> default: Resolving codeload.github.com (codeload.github.com)...
+==> default: 192.30.252.144
+==> default: Connecting to codeload.github.com (codeload.github.com)|192.30.252.144|:443...
+==> default: connected.
+==> default: HTTP request sent, awaiting response...
+==> default: 200 OK
+==> default: Length:
+==> default: 4534
+==> default:  (4.4K)
+==> default:  [application/x-gzip]
+==> default: Saving to: ???mbw.tar.gz???
+==> default:
+==> default:      0K
+==> default:
+==> default: .
+==> default: .
+==> default: .
+==> default: .
+==> default:
+==> default:
+==> default:
+==> default:
+==> default:
+==> default:
+==> default:
+==> default:                                            100% 2.26M=0.002s
+==> default:
+==> default: 2015-12-02 01:10:28 (2.26 MB/s) - ???mbw.tar.gz??? saved [4534/4534]
+==> default: mbw-1.4/
+==> default: mbw-1.4/Makefile
+==> default: mbw-1.4/README
+==> default: mbw-1.4/mbw.1
+==> default: mbw-1.4/mbw.c
+==> default: mbw-1.4/mbw.spec
+==> default: make: Entering directory `/home/vagrant/mbw-1.4'
+==> default: cc     mbw.c   -o mbw
+==> default: make: Leaving directory `/home/vagrant/mbw-1.4'
+Long uses 8 bytes. Allocating 2*134217728 elements = 2147483648 bytes of memory.
+Using 4096 bytes as blocks for memcpy block copy test.
+Getting down to business... Doing 10 runs per test.
+0       Method: MEMCPY  Elapsed: 0.31207        MiB: 1024.00000 Copy: 3281.284 MiB/s
+1       Method: MEMCPY  Elapsed: 0.30404        MiB: 1024.00000 Copy: 3367.934 MiB/s
+2       Method: MEMCPY  Elapsed: 0.30651        MiB: 1024.00000 Copy: 3340.837 MiB/s
+3       Method: MEMCPY  Elapsed: 0.30990        MiB: 1024.00000 Copy: 3304.260 MiB/s
+4       Method: MEMCPY  Elapsed: 0.29883        MiB: 1024.00000 Copy: 3426.732 MiB/s
+5       Method: MEMCPY  Elapsed: 0.29694        MiB: 1024.00000 Copy: 3448.497 MiB/s
+6       Method: MEMCPY  Elapsed: 0.30367        MiB: 1024.00000 Copy: 3372.093 MiB/s
+7       Method: MEMCPY  Elapsed: 0.30011        MiB: 1024.00000 Copy: 3412.082 MiB/s
+8       Method: MEMCPY  Elapsed: 0.31883        MiB: 1024.00000 Copy: 3211.693 MiB/s
+9       Method: MEMCPY  Elapsed: 0.29899        MiB: 1024.00000 Copy: 3424.818 MiB/s
+AVG     Method: MEMCPY  Elapsed: 0.30499        MiB: 1024.00000 Copy: 3357.481 MiB/s
+0       Method: DUMB    Elapsed: 0.72510        MiB: 1024.00000 Copy: 1412.225 MiB/s
+1       Method: DUMB    Elapsed: 0.71328        MiB: 1024.00000 Copy: 1435.619 MiB/s
+2       Method: DUMB    Elapsed: 0.72230        MiB: 1024.00000 Copy: 1417.684 MiB/s
+3       Method: DUMB    Elapsed: 0.72075        MiB: 1024.00000 Copy: 1420.740 MiB/s
+4       Method: DUMB    Elapsed: 0.72264        MiB: 1024.00000 Copy: 1417.036 MiB/s
+5       Method: DUMB    Elapsed: 0.72545        MiB: 1024.00000 Copy: 1411.534 MiB/s
+6       Method: DUMB    Elapsed: 0.74546        MiB: 1024.00000 Copy: 1373.645 MiB/s
+7       Method: DUMB    Elapsed: 0.72475        MiB: 1024.00000 Copy: 1412.897 MiB/s
+8       Method: DUMB    Elapsed: 0.73161        MiB: 1024.00000 Copy: 1399.645 MiB/s
+9       Method: DUMB    Elapsed: 0.72996        MiB: 1024.00000 Copy: 1402.809 MiB/s
+AVG     Method: DUMB    Elapsed: 0.72613        MiB: 1024.00000 Copy: 1410.213 MiB/s
+0       Method: MCBLOCK Elapsed: 0.29268        MiB: 1024.00000 Copy: 3498.749 MiB/s
+1       Method: MCBLOCK Elapsed: 0.29335        MiB: 1024.00000 Copy: 3490.758 MiB/s
+2       Method: MCBLOCK Elapsed: 0.29263        MiB: 1024.00000 Copy: 3499.240 MiB/s
+3       Method: MCBLOCK Elapsed: 0.29474        MiB: 1024.00000 Copy: 3474.260 MiB/s
+4       Method: MCBLOCK Elapsed: 0.29084        MiB: 1024.00000 Copy: 3520.824 MiB/s
+5       Method: MCBLOCK Elapsed: 0.28701        MiB: 1024.00000 Copy: 3567.820 MiB/s
+6       Method: MCBLOCK Elapsed: 0.29129        MiB: 1024.00000 Copy: 3515.385 MiB/s
+7       Method: MCBLOCK Elapsed: 0.29545        MiB: 1024.00000 Copy: 3465.899 MiB/s
+8       Method: MCBLOCK Elapsed: 0.31457        MiB: 1024.00000 Copy: 3255.206 MiB/s
+9       Method: MCBLOCK Elapsed: 0.29414        MiB: 1024.00000 Copy: 3481.276 MiB/s
+AVG     Method: MCBLOCK Elapsed: 0.29467        MiB: 1024.00000 Copy: 3475.067 MiB/s
+Connection to 127.0.0.1 closed.
+==> default: Forcing shutdown of VM...
+==> default: Destroying VM and associated drives...
+==> default: Running cleanup tasks for 'shell' provisioner...

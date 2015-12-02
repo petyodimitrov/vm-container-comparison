@@ -1,0 +1,15 @@
+Client:
+ Version:      1.8.3
+ API version:  1.20
+ Go version:   go1.4.2
+ Git commit:   f4bf5c7
+ Built:        Mon Oct 12 18:01:15 UTC 2015
+ OS/Arch:      windows/amd64
+
+Server:
+ Version:      1.8.3
+ API version:  1.20
+ Go version:   go1.4.2
+ Git commit:   f4bf5c7
+ Built:        Mon Oct 12 18:01:15 UTC 2015
+ OS/Arch:      linux/amd64

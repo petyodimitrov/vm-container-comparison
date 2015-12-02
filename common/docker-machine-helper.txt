@@ -1,0 +1,2 @@
+1. create VirtualBox shared folder common/
+2. docker-machine ssh default "mkdir -p /common && sudo mount -t vboxsf common /common/ && ls /common"
