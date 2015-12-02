@@ -1,5 +1,6 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
 cd classic_benchmarks/bin64
 
 echo "clean previous results"

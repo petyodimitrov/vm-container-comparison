@@ -4,7 +4,7 @@ TEST_HOME="/home/testing"
 BENCHMARKS="classic_benchmarks"
 
 USER=`whoami`
-sudo mkdir $TEST_HOME > /dev/null 2>&1 && sudo chown $USER $TEST_HOME > /dev/null 2>&1
+sudo mkdir -p $TEST_HOME && sudo chown $USER $TEST_HOME > /dev/null 2>&1
 
 if [ ! -d "${TEST_HOME}/${BENCHMARKS}" ]; then
 	echo "provisioning benchmark ${BENCHMARKS}"

@@ -2,6 +2,8 @@
 
 vagrant up
 vagrant ssh -c "/home/testing/runall.sh"
-vagrant halt -f
-vagrant destroy -f
+
+:: hangs for some reason
+::vagrant halt -f
+::vagrant destroy -f
 
