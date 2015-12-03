@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+
+  config.vm.define "server" do |server|
+    server.vm.box = "ubuntu/trusty64"
+	server.vm.hostname = "nuttcp-server"
+	server.vm.network "private_network", ip: "192.168.33.91"
+	server.vm.provision "shell", inline: "sudo cp /vagrant/bin/nuttcp-7.3.3.x86_64 /usr/bin/nuttcp && cp /vagrant/runall.sh /home/vagrant/"
+	
+	server.vm.provider "virtualbox" do |vb|
+		vb.name = "vm-nuttcp-server"
+		vb.memory = 2048
+		vb.cpus = 2
+	end
+  end
+  
+  config.vm.define "client" do |client|
+    client.vm.box = "ubuntu/trusty64"
+	client.vm.hostname = "nuttcp-client"
+	client.vm.network "private_network", ip: "192.168.33.92"
+	client.vm.provision "hosts", sync_hosts: true
+	client.vm.provision "shell", inline: "sudo cp /vagrant/bin/nuttcp-7.3.3.x86_64 /usr/bin/nuttcp && cp /vagrant/runall.sh /home/vagrant/"
+	
+	client.vm.provider "virtualbox" do |vb|
+		vb.name = "vm-nuttcp-client"
+		vb.memory = 2048
+		vb.cpus = 2
+	end
+  end
+    
+end

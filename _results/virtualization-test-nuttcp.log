@@ -1,0 +1,172 @@
+Bringing machine 'server' up with 'virtualbox' provider...
+Bringing machine 'client' up with 'virtualbox' provider...
+==> server: Importing base box 'ubuntu/trusty64'...
+==> server: Matching MAC address for NAT networking...
+==> server: Checking if box 'ubuntu/trusty64' is up to date...
+==> server: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> server: have version '20151119.0.0'. The latest is version '20151201.0.0'. Run
+==> server: `vagrant box update` to update.
+==> server: Setting the name of the VM: vm-nuttcp-server
+==> server: Clearing any previously set forwarded ports...
+==> server: Clearing any previously set network interfaces...
+==> server: Preparing network interfaces based on configuration...
+    server: Adapter 1: nat
+    server: Adapter 2: hostonly
+==> server: Forwarding ports...
+    server: 22 => 2222 (adapter 1)
+==> server: Running 'pre-boot' VM customizations...
+==> server: Booting VM...
+==> server: Waiting for machine to boot. This may take a few minutes...
+    server: SSH address: 127.0.0.1:2222
+    server: SSH username: vagrant
+    server: SSH auth method: private key
+    server: Warning: Connection timeout. Retrying...
+    server:
+    server: Vagrant insecure key detected. Vagrant will automatically replace
+    server: this with a newly generated keypair for better security.
+    server:
+    server: Inserting generated public key within guest...
+    server: Removing insecure key from the guest if it's present...
+    server: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> server: Machine booted and ready!
+==> server: Checking for guest additions in VM...
+    server: The guest additions on this VM do not match the installed version of
+    server: VirtualBox! In most cases this is fine, but in rare cases it can
+    server: prevent things such as shared folders from working properly. If you see
+    server: shared folder errors, please make sure the guest additions within the
+    server: virtual machine match the version of VirtualBox you have installed on
+    server: your host and reload your VM.
+    server:
+    server: Guest Additions Version: 4.3.34
+    server: VirtualBox Version: 5.0
+==> server: Setting hostname...
+==> server: Configuring and enabling network interfaces...
+==> server: Mounting shared folders...
+    server: /vagrant => D:/prj/vm-vs-container/vm-container-comparison/nuttcp
+==> server: Running provisioner: shell...
+    server: Running: inline script
+==> server: stdin: is not a tty
+==> client: Importing base box 'ubuntu/trusty64'...
+==> client: Matching MAC address for NAT networking...
+==> client: Checking if box 'ubuntu/trusty64' is up to date...
+==> client: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> client: have version '20151119.0.0'. The latest is version '20151201.0.0'. Run
+==> client: `vagrant box update` to update.
+==> client: Setting the name of the VM: vm-nuttcp-client
+==> client: Clearing any previously set forwarded ports...
+==> client: Fixed port collision for 22 => 2222. Now on port 2200.
+==> client: Clearing any previously set network interfaces...
+==> client: Preparing network interfaces based on configuration...
+    client: Adapter 1: nat
+    client: Adapter 2: hostonly
+==> client: Forwarding ports...
+    client: 22 => 2200 (adapter 1)
+==> client: Running 'pre-boot' VM customizations...
+==> client: Booting VM...
+==> client: Waiting for machine to boot. This may take a few minutes...
+    client: SSH address: 127.0.0.1:2200
+    client: SSH username: vagrant
+    client: SSH auth method: private key
+    client: Warning: Connection timeout. Retrying...
+    client:
+    client: Vagrant insecure key detected. Vagrant will automatically replace
+    client: this with a newly generated keypair for better security.
+    client:
+    client: Inserting generated public key within guest...
+    client: Removing insecure key from the guest if it's present...
+    client: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> client: Machine booted and ready!
+==> client: Checking for guest additions in VM...
+    client: The guest additions on this VM do not match the installed version of
+    client: VirtualBox! In most cases this is fine, but in rare cases it can
+    client: prevent things such as shared folders from working properly. If you see
+    client: shared folder errors, please make sure the guest additions within the
+    client: virtual machine match the version of VirtualBox you have installed on
+    client: your host and reload your VM.
+    client:
+    client: Guest Additions Version: 4.3.34
+    client: VirtualBox Version: 5.0
+==> client: Setting hostname...
+==> client: Configuring and enabling network interfaces...
+==> client: Mounting shared folders...
+    client: /vagrant => D:/prj/vm-vs-container/vm-container-comparison/nuttcp
+==> client: Running provisioner: hosts...
+==> server: Updating hosts on: server
+==> client: Running provisioner: shell...
+    client: Running: inline script
+==> client: stdin: is not a tty
+nohup: ignoring input and appending output to 'nohup.out'
+Connection to 127.0.0.1 closed.
+nuttcp-t: v7.3.3: socket
+nuttcp-t: buflen=65536, nstream=1, port=5101 tcp -> server
+nuttcp-t: time limit = 10.00 seconds
+nuttcp-t: connect to 192.168.33.91 with mss=1448, RTT=0.697 ms
+nuttcp-t: send window size = 87040, receive window size = 372480
+nuttcp-t: available send window = 43520, available receive window = 186240
+nuttcp-r: v7.3.3: socket
+nuttcp-r: buflen=65536, nstream=1, port=5101 tcp
+nuttcp-r: interval reporting every 1.00 second
+nuttcp-r: accept from 192.168.33.92
+nuttcp-r: send window size = 87040, receive window size = 374400
+nuttcp-r: available send window = 43520, available receive window = 187200
+  150.9375 MB /   1.00 sec = 1264.5458 Mbps     0 retrans
+    0.8750 MB /   1.00 sec =    7.3488 Mbps    92 retrans
+  150.0000 MB /   1.00 sec = 1256.6789 Mbps    32 retrans
+  158.3125 MB /   1.00 sec = 1328.6287 Mbps    29 retrans
+  165.1875 MB /   1.00 sec = 1385.7292 Mbps     0 retrans
+  168.7500 MB /   1.00 sec = 1416.1001 Mbps     0 retrans
+  167.0625 MB /   1.00 sec = 1400.3114 Mbps     0 retrans
+  166.2500 MB /   1.00 sec = 1394.6284 Mbps     0 retrans
+  172.0000 MB /   1.00 sec = 1443.3342 Mbps     0 retrans
+  167.6875 MB /   1.00 sec = 1404.6715 Mbps     0 retrans
+nuttcp-t: 1469.0356 MB in 10.00 real seconds = 150428.13 KB/sec = 1232.3072 Mbps
+nuttcp-t: 1469.0356 MB in 0.53 CPU seconds = 2834394.29 KB/cpu sec
+nuttcp-t: retrans = 153
+nuttcp-t: 23505 I/O calls, msec/call = 0.44, calls/sec = 2350.48
+nuttcp-t: 0.0user 0.5sys 0:10real 5% 0i+0d 802maxrss 0+2pf 1765+31csw
+
+nuttcp-r: 1469.0356 MB in 10.01 real seconds = 150229.33 KB/sec = 1230.6787 Mbps
+nuttcp-r: 1469.0356 MB in 3.29 CPU seconds = 457649.74 KB/cpu sec
+nuttcp-r: 30568 I/O calls, msec/call = 0.34, calls/sec = 3052.74
+nuttcp-r: 0.0user 3.2sys 0:10real 32% 0i+0d 322maxrss 0+25pf 7056+210csw
+Connection to 127.0.0.1 closed.
+nuttcp-r: v7.3.3: socket
+nuttcp-r: buflen=65536, nstream=1, port=5101 tcp
+nuttcp-r: interval reporting every 1.00 second
+nuttcp-r: accept from 192.168.33.91
+nuttcp-r: send window size = 87040, receive window size = 374400
+nuttcp-r: available send window = 43520, available receive window = 187200
+  155.1875 MB /   1.00 sec = 1301.5221 Mbps    45 retrans
+  165.0000 MB /   1.00 sec = 1382.2598 Mbps     0 retrans
+  160.9375 MB /   1.00 sec = 1350.1321 Mbps     0 retrans
+  155.5000 MB /   1.00 sec = 1305.2365 Mbps    45 retrans
+  152.8750 MB /   1.00 sec = 1283.1206 Mbps     0 retrans
+  134.6875 MB /   1.00 sec = 1129.3957 Mbps     0 retrans
+  146.8750 MB /   1.00 sec = 1232.6044 Mbps     0 retrans
+  133.0000 MB /   1.00 sec = 1115.9851 Mbps     0 retrans
+  131.8125 MB /   1.00 sec = 1105.3354 Mbps     0 retrans
+  151.8750 MB /   1.00 sec = 1273.1706 Mbps     0 retrans
+nuttcp-r: 1489.0686 MB in 10.01 real seconds = 152357.03 KB/sec = 1248.1088 Mbps
+nuttcp-r: 1489.0686 MB in 3.19 CPU seconds = 477614.19 KB/cpu sec
+nuttcp-r: 33159 I/O calls, msec/call = 0.31, calls/sec = 3313.21
+nuttcp-r: 0.0user 3.1sys 0:10real 31% 0i+0d 804maxrss 0+2pf 9320+172csw
+
+nuttcp-t: v7.3.3: socket
+nuttcp-t: buflen=65536, nstream=1, port=5101 tcp -> 192.168.33.92
+nuttcp-t: time limit = 10.00 seconds
+nuttcp-t: connect to 192.168.33.92 with mss=1448, RTT=0.455 ms
+nuttcp-t: send window size = 87040, receive window size = 372480
+nuttcp-t: available send window = 43520, available receive window = 186240
+nuttcp-t: 1489.0686 MB in 10.00 real seconds = 152478.35 KB/sec = 1249.1026 Mbps
+nuttcp-t: 1489.0686 MB in 0.57 CPU seconds = 2694137.20 KB/cpu sec
+nuttcp-t: retrans = 90
+nuttcp-t: 23826 I/O calls, msec/call = 0.43, calls/sec = 2382.56
+nuttcp-t: 0.0user 0.5sys 0:10real 5% 0i+0d 332maxrss 0+6pf 2620+0csw
+Connection to 127.0.0.1 closed.
+==> client: Forcing shutdown of VM...
+==> server: Forcing shutdown of VM...
+==> client: Destroying VM and associated drives...
+==> client: Running cleanup tasks for 'hosts' provisioner...
+==> client: Running cleanup tasks for 'shell' provisioner...
+==> server: Destroying VM and associated drives...
+==> server: Running cleanup tasks for 'shell' provisioner...
