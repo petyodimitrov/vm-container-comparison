@@ -4,7 +4,7 @@ TEST_HOME="/home/testing"
 USER=`whoami`
 sudo mkdir -p $TEST_HOME && sudo chown $USER $TEST_HOME > /dev/null 2>&1
 
-sudo apt-get -qq update && apt-get install pigz -y
+sudo apt-get -qq update && sudo apt-get install pigz -y
 
 # store file in memory (file needs to be manually provided in common/ directory)
 RAMFS=/mnt/ram
