@@ -9,7 +9,7 @@ PROVISION: (start + stop)
  * vm: 77.8s
  * docker: 0,969s (~80 times faster)
  
-COMPRESSION: (1�501�191�694 bytes, in-memory input, null output, level 2 compression, pigz version 2.3-2)
+COMPRESSION: (1 501 191 694 bytes, in-memory input, null output, level 2 compression, pigz version 2.3-2)
 ============
  * vm: 12.37s
  * docker: 11.83s (must be retested on linux!!!)
@@ -34,3 +34,158 @@ CPU: (classical benchmarks: whetstone, dhrystone, linpack, livermore):
  * vm:
  * docker: 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+COMMON:
+=======
+ * CPU: 2 cores, 2674.996 MHz, L1/L2/L3 cache 32K/256K/3072K, x86_64 arch
+ * RAM: 4096 MB
+ * OS: Ubuntu 14.04.3 LTS, Kernel: 3.13.0-74
+
+PROVISION ( [create + ] start + stop, real time, average of 10 executions):
+===========================================================================
+ VM: 67,367s
+ CO:  0,991s 
+
+CPU (classical benchmarks: whetstone, dhrystone, linpack, livermore):
+=====================================================================
+ * Whetstone Single Precision C Benchmark  No Opt 64 Bit, Wed Dec 23 09:46:30 2015
+           MWIPS   Mflops1   Mflops2   Mflops3   Cosmops   Expmops  Fixpmops    Ifmops    Eqmops
+    VM: 2428.818   682.063   636.845   332.944   108.241    49.743  1330.577  1509.229   423.730
+    CO: 2483.596   674.788   643.339   340.835   114.679    50.199  1329.451  1510.727   425.346
+ * Whetstone Single Precision C Benchmark  Opt 3 64 Bit, Wed Dec 23 09:40:34 2015
+           MWIPS   Mflops1   Mflops2   Mflops3   Cosmops   Expmops  Fixpmops    Ifmops    Eqmops
+    VM: 3842.828  1027.851  1021.573   752.982   106.897    49.744  5030.969  7449.030  1389.436
+    CO: 3888.501  1039.060  1031.250   755.416   108.065    50.566  5042.290  9188.857  1426.683
+ * Dhrystone Benchmark  1.1 No Opt 64 Bit via C/C++ Wed Dec 23 09:39:12 2015
+        VAX MIPS rating
+    VM: 6575.15
+    CO: 7168.77
+ * Dhrystone Benchmark  1.1 Opt 3 64 Bit via C/C++ Wed Dec 23 09:45:32 2015
+        VAX MIPS rating
+    VM: 24741.37
+    CO: 25542.08
+ * Dhrystone Benchmark 2.1 No Opt 64 Bit via C/C++ Wed Dec 23 09:45:40 2015
+        VAX MIPS rating
+    VM: 6823.82
+    CO: 7093.70
+ * Dhrystone Benchmark 2.1 Opt 3 64 Bit via C/C++ Wed Dec 23 09:45:47 2015
+        VAX MIPS rating
+    VM: 19018.65 
+    CO: 19426.94
+ * Linpack Double Precision Unrolled Benchmark n @ 100 Optimisation No Opt 64 Bit, Wed Dec 23 09:46:08 2015
+        Speed 
+    VM:  784.68
+    CO:  801.30
+ * Linpack Double Precision Unrolled Benchmark n @ 100 Optimisation Opt 3 64 Bit, Wed Dec 23 09:46:28 2015
+        Speed [MFLOPS]      
+    VM:  2921.45
+    CO:  2969.64
+ * Livermore Loops Benchmark No Opt 64 Bit via C/C++ Wed Dec 23 09:47:10 2015
+        Maximum Average Geomean Harmean Minimum
+    VM:  2260.8   734.8   637.4   567.6   316.2
+    CO:  2220.2   737.9   644.3   575.1   311.0  
+ * Livermore Loops Benchmark Opt 3 64 Bit via C/C++ Wed Dec 23 09:48:29 2015
+        Maximum Average Geomean Harmean Minimum
+    VM:  5318.3  2085.0  1722.6  1410.1   435.2
+    CO:  5323.0  2118.4  1757.5  1446.1   440.6
+
+CPU / COMPRESSION (1 501 191 694 bytes, in-memory input, null output, level 2 compression, pigz version 2.3-2, real time, avegare of 10 executions):
+=========================================================================================================================================
+ VM: 12.045s
+ CO: 10.758s
+
+
+IO (fio with 4GB test file):
+============================
+ * Sequential Read (Standard Deviation) [MB/s] (seq-read-2/bw/avg & stdev)
+    VM:  2246.00 ( 359.45)
+    CO: 57973.48 (7263.26)
+ * Sequential Write (Standard Deviation) [KB/s] (sequential-fill/bw/avg & stdev)
+    VM: 77128.93 (102231.70)
+    CO: 57166.57 ( 11339.11)
+ * Random Read [IOPS] (random-read-16x8/read/iops)
+    VM: 24932
+    CO: 237
+ * Random Write [IOPS] (random-write-16x8/write/iops)
+    VM: 3016
+    CO: 256
+ * Random Mixed [IOPS] (mixed-random-rw-32x8/read/iops + write/iops)
+    VM: 10333 + 4428 = 14761
+    CO: 167 + 68 = 235
+ * Random read response time [us] (random-read-16/read)
+           1%     5%    10%    50%    90%    99%    99.99%
+    VM:   604    676    684    692    876   1272   5472
+    CO:     7      9     11     42    186    441   1012
+
+MEMORY BANDWIDTH (mbw version 1.4 (built from source), test runs 10, block size 4096B, memory array 1024MB):
+============================================================================================================
+ * MEMCPY [MiB/s] (MiB: 1024)
+    VM: 5196.231
+    CO: 5286.637
+ * DUMB [MiB/s] (MiB: 1024)
+    VM: 3082.954
+    CO: 3251.482
+ * MCBLOCK [MiB/s] (MiB: 1024)
+    VM: 5255.044
+    CO: 5081.813
+
+MEMORY:
+=======
+ * Integer Serial Read [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    21102   19881   13535    10953     10470
+    CO:    21503   19785   14902    11762     11872
+ * Integer Serial Read/Write [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    20830   15922   11331    7555      7671
+    CO:    20047   18772   12082    8302      8282
+ * Integer Random Read [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    21269   11479   2290     387       138
+    CO:    16298   12049   2311     743       713
+ * Integer Random Read/Write [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    20357   6764    2540     361       139
+    CO:    20955   6815    2351     702       684
+ * Double Serial Read [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    23448   22657   17979    12621     12401
+    CO:    23972   23196   19703    13074     14588
+ * Double Serial Read/Write [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    33998   26720   17311    8651      9451
+    CO:    34056   27548   17441    10447     10512
+ * Double Random Read [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    24020   19046   4414     648       332
+    CO:    24064   20722   4386     1164      1143
+ * Double Random Read/Write [MB/s]
+           6KB     96KB    3072KB   98304KB   1572864KB
+    VM:    34084   11177   4441     595       305
+    CO:    34354   11306   4273     1114      1076
+
+NETPERF:
+========
+ * MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to netperf-server (172.17.0.2) port 0 AF_INET : demo : first burst 0
+   (Socket size: send 16384 bytes, receive 87380 bytes; Request size: 100 bytes; Response size: 200 bytes; Elapsed time: 60s)
+        Transfer Rate per sec
+    VM:  3181.38
+    CO: 35300.74
+ * MIGRATED UDP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to netperf-server (172.17.0.2) port 0 AF_INET : demo : first burst 0
+   (Socket size: send 212992 bytes, receive 212992 bytes; Request size: 100 bytes; Response size: 200 bytes; Elapsed time: 60s)
+        Transfer Rate per sec
+    VM:  3392.32
+    CO: 40514.62
+
+NUTTCP:
+=======
+ * Receiver transfer rate (nuttcp-r)
+         KB/sec       KB/cpu-sec   calls/sec
+   VM:    164969.28    475400.49    4035.04
+   CO:   2475063.34   2852020.40   38848.86
+ * Sender transfer rate (nuttcp-t)
+         KB/sec       KB/cpu-sec   calls/sec
+   VM:    165225.42   4100808.98    2581.74
+   CO:   2475067.30   2479006.68   38672.93
